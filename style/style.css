@@ -16,7 +16,6 @@ body,
 input,
 button {
   font-family: "Poppins", sans-serif;
-  /* color: white; */
   color: var(--black);
   font-size: 16px;
 }
@@ -29,7 +28,6 @@ main {
   width: 100%;
   height: auto;
   background-color: var(--green);
-  /* align-items: center; */
 }
 
 .text {
@@ -52,8 +50,6 @@ main {
   font-weight: 500;
 }
 .input_section {
-  /* background-color: #eb5e36; */
-  /* padding: 20px; */
   height: fit-content;
   border-radius: 15px;
 }
