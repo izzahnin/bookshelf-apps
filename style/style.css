@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --green: #147856;
+  --black: #081f1a;
+  --yellow: #f9b125;
+  --orange: #eb5e36;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+button {
+  font-family: "Poppins", sans-serif;
+  /* color: white; */
+  color: var(--black);
+  font-size: 16px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 20px 100px;
+  width: 100%;
+  height: auto;
+  background-color: var(--green);
+  /* align-items: center; */
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header > h1 {
+  font-size: 60px;
+  color: white;
+}
+
+.yellow {
+  color: var(--yellow);
+}
+.header > p {
+  font-size: 24px;
+  color: var(--yellow);
+  font-weight: 500;
+}
+.input_section {
+  /* background-color: #eb5e36; */
+  /* padding: 20px; */
+  height: fit-content;
+  border-radius: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input_box {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input > label {
+  font-weight: 500;
+  color: WHITE;
+}
+
+.input > input {
+  padding: 8px;
+  width: 100%;
+  border: 1px solid var(--black);
+  border-radius: 5px;
+}
+
+.submit_box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.submit_box > .mark {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 10px;
+  border: var(--black);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.bookSubmit {
+  width: 100px;
+  height: 40px;
+  background-color: var(--yellow);
+  color: var(--black);
+  font-weight: bold;
+}
+.figure {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.figure img {
+  max-width: 500px;
+  min-width: 200px;
+  object-fit: cover;
+}
+
+.category {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  width: 100%;
+  height: fit-content;
+  margin: 20px 0;
+  background-color: white;
+}
+.book_shelf {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  min-width: 400px;
+  gap: 15px;
+}
+
+.book_shelf > h2 {
+  text-align: center;
+  padding: 10px;
+  background-color: var(--yellow);
+  border-radius: 10px;
+  color: var(--black);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.book_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.book_item {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.book_item > h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.action {
+  display: flex;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.green {
+  background-color: var(--green);
+  color: white;
+}
+
+.red {
+  background-color: var(--orange);
+  color: white;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf App</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="text">
+        <header class="header">
+          <h1>BookShelf <span class="yellow">Apps</span></h1>
+          <p>Help you organize your reading books</p>
+        </header>
+        <section class="input_section">
+          <form id="inputBook">
+            <div class="input_box">
+              <div class="input">
+                <label for="inputTitle">Title:</label>
+                <input id="inputTitle" type="text" required />
+              </div>
+              <div class="input">
+                <label for="inputAuthor">Author:</label>
+                <input id="inputAuthor" type="text" required />
+              </div>
+              <div class="input">
+                <label for="inputYear">Year:</label>
+                <input id="inputYear" type="number" required />
+              </div>
+            </div>
+            <div class="submit_box">
+              <button class="bookSubmit">Add book</button>
+              <div class="mark"><label for="inputBookIsComplete">Mark as read</label> <input class="checkbox" id="inputBookIsComplete" type="checkbox" /></div>
+            </div>
+          </form>
+        </section>
+      </section>
+      <section class="figure">
+        <img src="/dicoding/bookshelf-apps/assets/img/figure1.png" alt="" />
+      </section>
+    </main>
+    <div class="category">
+      <section class="book_shelf">
+        <h2>Unfinished</h2>
+        <div id="incompleteBookshelfList" class="book_list">
+          <!-- <article class="book_item">
+            <h3>Book Title</h3>
+            <p>Author: John Doe</p>
+            <p>Year: 2002</p>
+            <div class="action">
+              <button class="green">Complete</button>
+              <button class="red">Delete Book</button>
+            </div>
+          </article> -->
+        </div>
+      </section>
+      <section class="book_shelf">
+        <h2>Finished</h2>
+        <div id="completeBookshelfList" class="book_list">
+          <!-- <article class="book_item">
+            <h3>Book Title</h3>
+            <p>Author: John Doe</p>
+            <p>Year: 2002</p>
+            <div class="action">
+              <button class="green">Complete</button>
+              <button class="red">Delete Book</button>
+            </div>
+          </article> -->
+        </div>
+      </section>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
