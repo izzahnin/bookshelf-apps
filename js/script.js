@@ -22,7 +22,7 @@ function generateTodoObject(id, title, author, year, isCompleted) {
     id,
     title,
     author,
-    year,
+    year: parseInt(year),
     isCompleted,
   };
 }
@@ -60,7 +60,7 @@ function addBook() {
   const year = document.getElementById("inputYear").value;
   const isCompleted = document.getElementById("inputBookIsComplete").checked;
 
-  const bookObject = generateTodoObject(id, title, author, year, isCompleted);
+  const bookObject = generateTodoObject(id, title, author, parseInt(year), isCompleted);
   bookshelf.push(bookObject);
 
   document.dispatchEvent(new Event(RENDER_EVENT));
